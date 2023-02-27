@@ -1,0 +1,126 @@
+/* 
+Color pallete = https://www.sarahtitus.com/25-best-travel-destinations-color-palettes/
+Primary color = #1A385A
+
+Accent colors = 
+#769ABE
+#E8AA9B
+#DCD5DC
+
+CTA color = #E46F44
+
+
+Hero video Source = https://youtu.be/TBfyRPrR-X4
+
+*/
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    /* background-color: #769ABE; */
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav-item a {
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.nav-li-span {
+    font-size: 10px;
+    padding: 0px 16px;
+    font-weight: bold;
+}
+
+.dropdown-menu li a:hover {
+    color: black;
+    background-color: rgb(219, 219, 219);
+
+}
+
+
+/* START OF HEADER SECTION */
+
+header {
+    position: relative; /*giving parent element the position relative will allow us to set absolute position for the overlay child element*/
+    height: 100vh; /* 100% viewport height*/
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text-inner {
+    width: 100%;
+    position: absolute; /*This will position the h1 and h3 elements in front of the hero video*/
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 150px;
+    text-shadow: 2px 3px rgb(87, 85, 85);
+}
+
+h3 {
+    font-size: 50px;
+    text-shadow: 1px 2px rgb(87, 85, 85);
+}
+
+/* HERO CALL TO ACTION BUTTON */
+.cta-outter {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-cta-book {
+    width: 150px;
+    height: 50px;
+    background-color: #E46F44;
+
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 18px;
+    font-weight: 800;
+
+    border-radius: 10px;
+    box-shadow: 1px 1px #DCD5DC;
+}
+
+
+/* START OF THE MAIN SECTION */
+main {
+    margin: 20px 50px;
+    height: 100vh;
+}
+
+.cards-container-inner {
+    display: flex;
+    margin: 50px auto;
+    background-color: #E46F44;
+}
+
+.card {
+    max-width: 300px;
+    height: 350px;
+    margin: 10px;
+}

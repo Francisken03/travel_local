@@ -1,0 +1,170 @@
+/* 
+Color pallete = https://www.sarahtitus.com/25-best-travel-destinations-color-palettes/
+Primary color = #1A385A
+
+Accent colors = 
+#769ABE
+#E8AA9B
+#DCD5DC
+
+CTA color = #E46F44
+
+
+Hero video Source = https://youtu.be/TBfyRPrR-X4
+
+*/
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  /* background-color: #1A385A; */
+  background-color: #769abe;
+  z-index: 99999999;
+}
+
+.navbar-brand {
+  object-fit: cover;
+}
+
+.navbar-collapse li {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  color: black;
+}
+
+.nav-item a:hover {
+  color: white;
+}
+
+.nav-item:hover {
+  font-weight: bold;
+}
+
+.nav-li-span {
+  font-size: 10px;
+  padding: 0px 16px;
+  font-weight: bold;
+}
+
+.dropdown-menu li a {
+  color: black;
+}
+
+.dropdown-menu li a:hover {
+  color: black;
+}
+
+.header {
+  position: relative;
+  /* height: 100vh; */
+  width: 100%;
+}
+
+video {
+  max-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* .header-text-container {
+  height: 100%;
+} */
+
+.header-text-inner {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  max-height: 100%;
+  min-width: 100%;
+  text-align: center;
+}
+
+h1 {
+  /* font-family: "Playfair Display", serif; */
+  font-size: 150px;
+  text-shadow: 3px 2px black;
+}
+
+h3 {
+  /* font-size: 80px; */
+  text-shadow: 1px 1px gray;
+}
+
+.cta-outter {
+  width: 100%;
+  height: 100%;
+}
+
+.cta-container {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.btn-cta-book {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  border-radius: 5px;
+  height: 40px;
+  width: 130px;
+  background-color: #e46f44;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px blue;
+
+  cursor: pointer;
+  box-shadow: 1px 1px white;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+}
+
+.cards-container-inner {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.card-img-top {
+  border-radius: 5px;
+  width: 380px;
+  height: 250px;
+}
+
+.card-top {
+  position: relative;
+}
+
+.heart-container {
+  position: absolute;
+  padding: 5px;
+}
+
+.fa-solid {
+  align-self: right;
+}
+
+main {
+  height: 2000px;
+  background-color: green;
+}
