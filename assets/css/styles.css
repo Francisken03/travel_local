@@ -1,16 +1,12 @@
 /* 
+Hero video Source = https://youtu.be/TBfyRPrR-X4
 Color pallete = https://www.sarahtitus.com/25-best-travel-destinations-color-palettes/
-Primary color = #1A385A
-
-Accent colors = 
+Primary color =
+#1A385A
 #769ABE
-#E8AA9B
-#DCD5DC
 
 CTA color = #E46F44
 
-
-Hero video Source = https://youtu.be/TBfyRPrR-X4
 
 */
 
@@ -29,13 +25,17 @@ Hero video Source = https://youtu.be/TBfyRPrR-X4
 }
 
 .nav-item a {
-    color: black;
-    font-size: 20px;
+    color: #E46F44;
+    font-size: 25px;
     margin-left: 5px;
+
+    text-shadow: 1px 2px black;
 }
 
 .nav-item a:hover {
-    color: white;
+    color: black;
+    text-shadow: .5px .5px white;
+    transition: color 1s;
 }
 
 .nav-li-span {
@@ -109,18 +109,77 @@ h3 {
 
 /* START OF THE MAIN SECTION */
 main {
-    margin: 20px 50px;
+    padding: 200px 100px 0px;
     height: 100vh;
 }
 
-.cards-container-inner {
+/* .row {
     display: flex;
     margin: 50px auto;
     background-color: #E46F44;
+} */
+
+.cards-row {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 250px;
+    margin: 15px 10px 100px;
 }
 
 .card {
-    max-width: 300px;
-    height: 350px;
-    margin: 10px;
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    /* margin: 10px; */
+    padding: 0%;
+    border: 0px;
 }
+
+/* .card img {
+    
+} */
+
+.heart-icon {
+    margin: 5px;
+    position: absolute;
+    /* color: rgb(141, 137, 137); */
+    color: white;
+
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 15px; */
+    /* visibility: hidden; */
+}
+
+.card-text p {
+    font-size: 15px;
+    text-align: left;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+/* @media screen and (max-width: 450px) {
+    header {
+        height: 50vh;
+    }
+    
+    .cards-row {
+        justify-content: center;
+    }
+} */
