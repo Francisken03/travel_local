@@ -79,7 +79,7 @@ h1 {
     text-shadow: 2px 3px rgb(87, 85, 85);
 }
 
-h3 {
+.h3-header {
     font-size: 50px;
     text-shadow: 1px 2px rgb(87, 85, 85);
 }
@@ -106,11 +106,30 @@ h3 {
     box-shadow: 1px 1px #DCD5DC;
 }
 
+.mobile-heder2 { /* This makes the header2 section visibile only for small screen sizes*/
+    display: none;
+}
+
 
 /* START OF THE MAIN SECTION */
 main {
-    padding: 200px 100px 0px;
+    /* padding: 200px 100px 0px; */
     height: 100vh;
+}
+
+.main-hr {
+    margin: 0%;
+    height: 80px;
+    background-color: #769ABE;
+}
+
+.section-cards {
+    /* box-sizing: border-box; */
+    margin: 20px 0px;
+}
+
+.section-cards-inner {
+    padding: 20px 0px;
 }
 
 /* .row {
@@ -174,12 +193,28 @@ h4 {
     margin-bottom: 0px;
 }
 
-/* @media screen and (max-width: 450px) {
-    header {
-        height: 50vh;
-    }
-    
-    .cards-row {
-        justify-content: center;
-    }
-} */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-container-inner  {
+    padding: 40px;
+    background-color: #769ABE;
+    border-radius: 10px;
+}
+
+.contact-link {
+    color: black;
+}
+
+.contact-link:hover {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
