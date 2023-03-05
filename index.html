@@ -80,7 +80,7 @@
                               Start of nav-dropdown
                   ************************************************** -->
               <ul class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                <li><a class="dropdown-item" href="#">Travel Packages</a></li>
+                <li><a class="dropdown-item" href="services.html">Travel Packages</a></li>
                 <li>
                   <hr />
                 </li>
@@ -88,12 +88,8 @@
                   <a class="dropdown-item" href="#"
                     >Flight+ Plane Tiket with Hotel Booking</a
                   >
-                  <span class="nav-li-span">Plane Ticket + Hotel Booking</span>
+                  <span class="nav-li-span">(Plane Ticket + Hotel Booking)</span>
                 </li>
-                <li>
-                  <hr />
-                </li>
-                <li><a class="dropdown-item" href="#">Hotel Booking</a></li>
                 <li>
                   <hr />
                 </li>
@@ -107,31 +103,44 @@
                 <li>
                   <hr />
                 </li>
-                <li><a class="dropdown-item" href="#">Insurance</a></li>
+                
+                <li><a class="dropdown-item" href="#">Purchase Sim Card</a></li>
                 <li>
                   <hr />
                 </li>
-                <li><a class="dropdown-item" href="#">Purchase Sim Card</a></li>
+                <li><a class="dropdown-item disabled" href="#">Insurance</a>
+                  <span class="upcoming">Upcoming Feature!</span>
+                </li>
+                <li>
+                  <hr />
+                </li>
+                <li><a class="dropdown-item disabled" href="#">Hotel Booking</a>
+                  <span class="upcoming">Upcoming Feature!</span></li>
+                  <!-- <li>
+                    <hr />
+                  </li> -->
+                
               </ul>
 
               <!-- **************************************************
                               End of nav-dropdown
                   ************************************************** -->
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Promotions</a>
-            </li>
 
             <!-- <li class="nav-item">
-              <a class="nav-link" href="#">FAQs</a>
+              <a class="nav-link" href="#">Events</a>
             </li> -->
 
             <li class="nav-item">
-              <a class="nav-link" href="#name">Contact Us</a>
+              <a class="nav-link" href="promo.html">Promotions</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html#name">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -153,7 +162,7 @@
         <div class="header-text-inner">
           <div class="header-text text-white">
             <h1 class="fw-bold">Travel <span>Local.Ph</span></h1>
-            <h3 class="h4-header">
+            <h3 class="h3-header">
               Explore Nature, <span>Experience Our Culture</span>
             </h3>
           </div>
@@ -162,7 +171,7 @@
 
       <div class="cta-outter">
         <div class="cta-container">
-          <button class="btn-cta-book">BOOK NOW</button>
+          <button class="btn-cta-book"><a href="promo.html">BOOK NOW</a></button>
         </div>
       </div>
     </header>
@@ -271,7 +280,7 @@
                 />
               </div>
               <div class="card-text">
-                <h4>China Town, Manila</h4>
+                <h4>China Town</h4>
                 <p class="card-text-inner">
                   Experience food trip in the oldest Chinatown in the world.
                 </p>
@@ -288,7 +297,7 @@
                 />
               </div>
               <div class="card-text">
-                <h4>Intramuros, Manila</h4>
+                <h4>Intramuros</h4>
                 <p class="card-text-inner">
                   Walk around the walled city of Manila.
                 </p>
@@ -355,7 +364,7 @@
                 />
               </div>
               <div class="card-text">
-                <h4>Calle Crisologo, Vigan</h4>
+                <h4>Calle Crisologo</h4>
                 <p class="card-text-inner">Walk back in time in Vigan.</p>
               </div>
             </div>
@@ -387,7 +396,7 @@
                 />
               </div>
               <div class="card-text">
-                <h4>Bohol</h4>
+                <h4>Chocolate Hills</h4>
                 <p class="card-text-inner">
                   Surround yoursel with hundreds of small mountains.
                 </p>
@@ -415,117 +424,7 @@
       </div>
     </main>
 
-    <div class="contact-container">
-      <form action="contact-form row">
-        <div class="contact-container-inner row">
-          <div class="col-lg-8 text-start">
-            <div class="row">
-              <div class="col-lg-6 mb 3">
-                <label for="name" class="form-label" id="name">Name</label>
-                <input
-                  type="text"
-                  id="input-name"
-                  class="form-control"
-                  placeholder="Name or Nickname"
-                  required
-                />
-              </div>
-
-              <div class="col-lg-6 mb-3">
-                <label for="email-adress" class="form-label">E-mal</label>
-                <input
-                  type="email"
-                  id="input-email"
-                  class="form-control"
-                  placeholder="Email Adress"
-                  reqired
-                />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6 mb-3">
-                <label class="form-label" for="phone"
-                  >Phone Number(999-999-9999)</label
-                >
-                <input
-                  class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="12 Digit Mobile Number"
-                  pattern="[0-9}{3}-[0-9]{3}-[0-9]{4}"
-                  required
-                />
-              </div>
-
-              <div class="col-lg-6 mb-3">
-                <label class="form-label" for="msg-category"
-                  >Brief Description</label
-                >
-                <input
-                  class="form-control"
-                  id="message-category"
-                  type="text"
-                  placeholder="Brief Description"
-                  email
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label" for="message"></label>
-              <textarea
-                class="form-control"
-                id="message"
-                type="text"
-                placeholder="Message"
-                style="height: 10rem"
-                required
-              ></textarea>
-            </div>
-
-            <div class="d-grid">
-              <button class="btn btn-primary btn-lg" type="submit">
-                Submit
-              </button>
-            </div>
-          </div>
-
-          <div class="col-lg-4 office-details text-start">
-            <ul class="ul">
-              <li>
-                &#128222;
-                <span id="call"
-                  ><a href="#tel://+63-901-234-5678" class="contact-link">+63-901-234-5678</a></span
-                >
-              </li>
-
-              <li>
-                &#128231;<a href="mailto:support@hydrofarm.com"
-                class="contact-link">support@travellocal.com.ph</a
-                >
-              </li>
-
-              <li>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>1 Rizal Park,
-                Ermita, Manila, Metro Manila, 0913
-
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2743704944355!2d120.97192091527886!3d14.583435581405704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca1cd1819401%3A0x1fcf5e00dfe8decc!2sThe%20Manila%20Hotel!5e0!3m2!1sen!2sph!4v1663767098612!5m2!1sen!2sph"
-                  width="400"
-                  height="300"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </form>
-    </div>
+    
 
 
     <footer>

@@ -5,6 +5,8 @@ Primary color =
 #1A385A
 #769ABE
 
+Background accent = #9ec3e7
+
 CTA color = #E46F44
 
 
@@ -22,6 +24,7 @@ CTA color = #E46F44
     position: fixed;
     width: 100%;
     top: 0;
+    backdrop-filter: blur(3px);
 }
 
 .nav-item a {
@@ -35,7 +38,7 @@ CTA color = #E46F44
 .nav-item a:hover {
     color: black;
     text-shadow: .5px .5px white;
-    transition: color 1s;
+    transition: color .5s;
 }
 
 .nav-li-span {
@@ -44,10 +47,22 @@ CTA color = #E46F44
     font-weight: bold;
 }
 
+.upcoming {
+    color: red;
+    font-size: 10px;
+    padding: 0px 16px;
+}
+
+
+.dropdown-menu li a {
+    color: black;
+    text-shadow: none;
+    margin: 0px;
+}
+
 .dropdown-menu li a:hover {
     color: black;
     background-color: rgb(219, 219, 219);
-
 }
 
 
@@ -97,13 +112,16 @@ h1 {
     height: 50px;
     background-color: #E46F44;
 
+    border-radius: 10px;
+    box-shadow: 1px 1px #DCD5DC;
+}
+
+.btn-cta-book a {
+    text-decoration: none;
     color: white;
     text-shadow: 1px 1px black;
     font-size: 18px;
     font-weight: 800;
-
-    border-radius: 10px;
-    box-shadow: 1px 1px #DCD5DC;
 }
 
 .mobile-heder2 { /* This makes the header2 section visibile only for small screen sizes*/
@@ -195,8 +213,10 @@ h4 {
 
 .contact-container {
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    height: 100vh;
 }
 
 .contact-container-inner  {
@@ -217,4 +237,38 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    /* position: absolute;
+    top: 100%; */
+
 }
+
+.faqs-section-container {
+    height: 100vh;
+    /* margin: 10% auto 10%; */
+    display: flex;
+    align-items: center;
+}
+
+.faq-container {
+    margin: 0px auto;
+    width: 70%;
+    /* align-self: center; */
+}
+
+.faq-heading-container {
+    text-align: center;
+}
+
+.sm-screen-collapse {
+    display: none; /* This will hide the mobile collapse section. using display none to prevent the accordion from sliding down when in large screen size*/
+}
+
+.faq-btn:focus {
+    background-color: #E46F44
+  }
+
+  .lg-screen-collapse .card-body{
+    text-align: center;
+    background-color: #769ABE;
+    padding: 10px;
+  }

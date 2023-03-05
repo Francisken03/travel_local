@@ -7,6 +7,12 @@ Desktops: 1025px — 1200px
 
  */
 
+ body {
+    max-width: 480px;
+    margin: 0%;
+    padding: 0%;
+ }
+
 .navbar-collapse {
     backdrop-filter: blur(3px); /* This gives the bg blur effect on the navigation menu*/
 }
@@ -45,7 +51,7 @@ h1 {
     font-size: 60px
 }
 
-h3 {
+.h3-header {
     font-size: 20px;
 }
 
@@ -61,13 +67,15 @@ h3 {
     height: 25px;
     background-color: #E46F44;
 
+    border-radius: 5px;
+    box-shadow: 1px 1px #DCD5DC;
+}
+
+.btn-cta-book a {
     color: white;
     text-shadow: .5px 1px black;
     font-size: 15px;
     font-weight: 800;
-
-    border-radius: 5px;
-    box-shadow: 1px 1px #DCD5DC;
 }
 
 .mobile-heder2 {
@@ -87,6 +95,11 @@ h3 {
     box-shadow: 5px 3px 5px #9ec3e8;;
 }
 
+/* main {
+    max-height: 1000px;
+    display: block;
+}
+
 .news-left {
     font-weight: bold;
     vertical-align: baseline;
@@ -103,4 +116,107 @@ h3 {
 
 .cards-row  {
     padding: 1px;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 5px;
 }
+
+.contact-container {
+    margin: 0px;
+} */
+
+/* =========================================
+        main section
+   ========================================= */ 
+
+main {
+    height: auto;
+    background-color: #9ec3e7;
+}
+
+.main-hr {
+    display: none;
+}
+
+.section-cards {
+    /* box-sizing: border-box; */
+    margin: 20px 0px;
+}
+
+.section-cards-inner {
+    padding: 20px 0px;
+}
+
+/* .row {
+    display: flex;
+    margin: 50px auto;
+    background-color: #E46F44;
+} */
+
+.cards-row {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    margin: 15px 10px 150px;
+}
+
+.card-text p {
+    font-size: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+h4 {
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+        contact section
+   ========================================= */ 
+
+.section-contact {
+    max-width: 450px;
+    margin: 0px auto;
+}
+
+.contact-container {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+
+    
+}
+.contact-form {
+    max-width: 80%;
+    
+}
+
+.contact-container-inner {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.contact-btn-sub {
+    background-color: #E46F44;
+}
+
+/* =========================================
+        footer section
+   ========================================= */
+   /* footer {
+    width: 100%  ;
+
+   } */
