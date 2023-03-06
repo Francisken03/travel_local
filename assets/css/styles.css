@@ -9,6 +9,16 @@ Background accent = #9ec3e7
 
 CTA color = #E46F44
 
+Reference for promotions page: 
+https://www.fiestatours.com.ph/cst-promos/merci-beaucoup-tales-europe/
+https://www.w3schools.com/js/js_htmldom_events.asp
+
+Reference for flight and hotel booking page:
+https://www.cheapflights.com.ph/?lang=en&skipapp=true&gclid=Cj0KCQiA9YugBhCZARIsAACXxeKAB6rfL43MfQQYWEkXbduIlSGVafznbor894FFWzhV4juNjN_tuqQaAlCqEALw_wcB
+
+
+API Reference:
+Travel & Booking = https://nordicapis.com/6-most-popular-travel-and-booking-apis/
 
 */
 
@@ -117,6 +127,7 @@ h1 {
 }
 
 .btn-cta-book a {
+    /* position: inherit; */
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px black;
@@ -144,6 +155,7 @@ main {
 .section-cards {
     /* box-sizing: border-box; */
     margin: 20px 0px;
+
 }
 
 .section-cards-inner {
@@ -272,3 +284,87 @@ footer {
     background-color: #769ABE;
     padding: 10px;
   }
+
+
+
+  .buffer {
+    height: 80px;
+    /* background-color: #9ec3e7; */
+  }
+
+  .featured-services {
+    margin: 20px 10px;
+    padding: 0%;    
+  }
+
+  .booking-info {
+    background-color: #9ec3e7;    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.booking-info form {
+    width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.booking-info input, select, button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px 1px solid black;
+    cursor: pointer;
+}
+
+.booking-btn {
+    /* border: none; */
+    background-color: #E46F44;
+}
+
+.pax-count {
+    max-width: 70px;
+}
+
+/* 
+start of modal 
+ */
+
+ .booking-modal {
+    z-index: 999999999;
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+ }
+
+ .booking-modal-content {
+    width: 300px;
+    background-color: #9ec3e7;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+ .close-booking-modal {
+    color: #E46F44;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+ }
+
+ .close-booking-modal:hover, .close-booking-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+ }

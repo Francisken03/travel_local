@@ -8,7 +8,7 @@ Desktops: 1025px — 1200px
  */
 
  body {
-    max-width: 480px;
+    max-width: 768px;
     margin: 0%;
     padding: 0%;
  }
@@ -66,6 +66,7 @@ h1 {
     width: 100px;
     height: 25px;
     background-color: #E46F44;
+
     border-radius: 5px;
     box-shadow: 1px 1px #DCD5DC;
 }
@@ -73,7 +74,7 @@ h1 {
 .btn-cta-book a {
     color: white;
     text-shadow: .5px 1px black;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 800;
 }
 

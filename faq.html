@@ -33,6 +33,18 @@
       media="(max-width: 480px)"
     />
 
+    <link
+      rel="stylesheet"
+      href="assets/css/media(max768).css"
+      media="(max-width: 768px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/css/media(max1024).css"
+      media="(max-width: 1024px)"
+    />
+
     <title>Mini Project V2</title>
   </head>
 
@@ -73,51 +85,54 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                disabled
               >
                 Services
               </a>
               <!-- **************************************************
                               Start of nav-dropdown
                   ************************************************** -->
-              <ul class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                <li>
-                  <a class="dropdown-item" href="services.html"
-                    >Travel Packages</a
-                  >
-                </li>
-                <li>
-                  <hr />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Flight+ Plane Tiket with Hotel Booking</a
-                  >
-                  <span class="nav-li-span">Plane Ticket + Hotel Booking</span>
-                </li>
-                <li>
-                  <hr />
-                </li>
-                <li><a class="dropdown-item" href="#">Hotel Booking</a></li>
-                <li>
-                  <hr />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Passport Application</a>
-                </li>
-                <li>
-                  <hr />
-                </li>
-                <li><a class="dropdown-item" href="#">Visa Processing</a></li>
-                <li>
-                  <hr />
-                </li>
-                <li><a class="dropdown-item" href="#">Insurance</a></li>
-                <li>
-                  <hr />
-                </li>
-                <li><a class="dropdown-item" href="#">Purchase Sim Card</a></li>
-              </ul>
+                  <ul class="dropdown-menu" aria-labelledby="navbar-dropdown">
+                    <!-- <li><a class="dropdown-item" href="services.html">Travel Packages</a></li>
+                    <li>
+                      <hr />
+                    </li> -->
+                    <li>
+                      <a class="dropdown-item" href="services.html#top"
+                        >Flight+ Plane Tiket with Hotel Booking</a
+                      >
+                      <span class="nav-li-span">(Plane Ticket + Hotel Booking)</span>
+                    </li>
+                    <li>
+                      <hr />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Passport Application</a>
+                    </li>
+                    <li>
+                      <hr />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Visa Processing</a></li>
+                    <li>
+                      <hr />
+                    </li>
+                    
+                    <li><a class="dropdown-item" href="#">Purchase Sim Card</a></li>
+                    <li>
+                      <hr />
+                    </li>
+                    <li><a class="dropdown-item disabled" href="#">Insurance</a>
+                      <span class="upcoming">Upcoming Feature!</span>
+                    </li>
+                    <li>
+                      <hr />
+                    </li>
+                    <li><a class="dropdown-item disabled" href="#">Hotel Booking</a>
+                      <span class="upcoming">Upcoming Feature!</span></li>
+                      <!-- <li>
+                        <hr />
+                      </li> -->
+                    
+                  </ul>
 
               <!-- **************************************************
                               End of nav-dropdown
@@ -129,7 +144,7 @@
             </li> -->
 
             <li class="nav-item">
-              <a class="nav-link" href="promo.html">Promotions</a>
+              <a class="nav-link" href="index.html#packages">Travel Package</a>
             </li>
 
             <li class="nav-item">
@@ -164,16 +179,16 @@
                 class="btn faq-btn col-lg-12 col-md-12 col-sm-12 text-start fw-bold"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapse-definition"
+                data-bs-target="#collapse-legit"
                 aria-expanded="false"
-                aria-controls="collapse-definition"
+                aria-controls="collapse-legit"
               >
                 Are we a legitimate company?
               </button>
 
               <div
                 class="collapse sm-screen-collapse"
-                id="collapse-definition"
+                id="collapse-legit"
                 data-bs-parent="#expanded-group"
               >
                 <div class="card card-body">
@@ -190,16 +205,16 @@
                 class="btn faq-btn col-lg-12 col-md-12 col-sm-12 text-start fw-bold"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapse-types"
+                data-bs-target="#collapse-location"
                 aria-expanded="false"
-                aria-controls="collapse-types"
+                aria-controls="collapse-location"
               >
                 Where are we located?
               </button>
 
               <div
                 class="collapse sm-screen-collapse"
-                id="collapse-types"
+                id="collapse-location"
                 data-bs-parent="#expanded-group"
               >
                 <div class="card card-body">
@@ -215,16 +230,16 @@
                 class="btn faq-btn col-lg-12 col-md-12 col-sm-12 text-start fw-bold"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapse-vs"
+                data-bs-target="#collapse-hours"
                 aria-expanded="false"
-                aria-controls="collapse-vs"
+                aria-controls="collapse-hours"
               >
                 What is our office hours?
               </button>
 
               <div
                 class="collapse sm-screen-collapse"
-                id="collapse-vs"
+                id="collapse-hours"
                 data-bs-parent="#expanded-group"
               >
                 <div class="card card-body">
@@ -240,16 +255,16 @@
                 class="btn faq-btn col-lg-12 col-md-12 col-sm-12 text-start fw-bold"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapse-other"
+                data-bs-target="#collapse-discounts"
                 aria-expanded="false"
-                aria-controls="collapse-other"
+                aria-controls="collapse-discounts"
               >
                 Do we have promotions and discount?
               </button>
 
               <div
                 class="collapse sm-screen-collapse"
-                id="collapse-other"
+                id="collapse-discounts"
                 data-bs-parent="#expanded-group"
               >
                 <div class="card card-body">
@@ -262,11 +277,11 @@
             </div>
           </div>
 
-          <!-- accordion expanded -->
+          <!-- accordion expanded large screens -->
           <div class="col-lg-8 lg-screen-collapse">
             <div
               class="collapse"
-              id="collapse-definition"
+              id="collapse-legit"
               data-bs-parent="#expanded-group"
             >
               <div class="card card-body">
@@ -279,7 +294,7 @@
 
             <div
               class="collapse"
-              id="collapse-types"
+              id="collapse-location"
               data-bs-parent="#expanded-group"
             >
               <div class="card card-body">
@@ -291,7 +306,7 @@
 
             <div
               class="collapse"
-              id="collapse-vs"
+              id="collapse-hours"
               data-bs-parent="#expanded-group"
             >
               <div class="card card-body">
@@ -303,7 +318,7 @@
 
             <div
               class="collapse"
-              id="collapse-other"
+              id="collapse-discounts"
               data-bs-parent="#expanded-group"
             >
               <div class="card card-body">
@@ -355,14 +370,14 @@
               <div class="row">
                 <div class="col-lg-6 mb-3">
                   <label class="form-label" for="phone"
-                    >Phone Number(999-999-9999)</label
+                    >Phone Number(+00 000 000 0000)</label
                   >
                   <input
                     class="form-control"
                     id="phone"
                     type="tel"
-                    placeholder="12 Digit Mobile Number"
-                    pattern="[0-9}{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="12-Digits Mobile Number"
+                    pattern="{0-9}{3}-[0-9]{3}-[0-9]{4}"
                     required
                   />
                 </div>
