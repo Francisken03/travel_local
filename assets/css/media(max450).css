@@ -11,6 +11,7 @@ Desktops: 1025px — 1200px
     max-width: 480px;
     margin: 0%;
     padding: 0%;
+    border: 0%;
  }
 
 .navbar-collapse {
@@ -99,7 +100,7 @@ h1 {
     padding: 40px;
     background-color: #769ABE;
     border-radius: 10px;
-    width: 450px;
+    width: 390px;
 }
 
 /* main {
@@ -250,6 +251,28 @@ h4 {
 } 
 
 
+/* =========================================
+        Package Locations Page
+   ========================================= */
+
+ .package-features {
+    margin: 0px !important;
+    padding: 0px !important;
+ }
+
+ .loc-primary-img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ .package-img-container, .package-features-inner {
+    flex-direction: column;
+ }
+
+ .inclusions, .fine-print {
+    width: 350px;
+    margin: 10px auto;
+ }
 
 /* =========================================
         footer section

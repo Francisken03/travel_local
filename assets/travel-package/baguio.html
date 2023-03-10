@@ -46,6 +46,31 @@
 
     <title>Mini Project V2</title>
   </head>
+
+  <style>
+    html {
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 480px){
+      html  {
+        overflow-y: scroll;
+      }
+
+      .inclusions, .fine-print{
+        width: 250px;
+      }
+
+      .location-modal-booking-form, .location-modal-booking-form-item {
+        display: flex;
+        flex-direction: column;
+       
+
+      
+    }
+  }
+
+  </style>
   <body>
     <section class="package-location-container">
       <!-- ==================================================
@@ -60,15 +85,15 @@
        ================================================== -->
 
       <div class="package-img-container">
-        <div class="package-left-img img-fluid">
-          <img
+        <div class="package-left-img">
+          <img class="loc-primary-img"
             src="../creatives/images/baguio/lion-head.jpg"
             alt="Baguio Lion's Head"
           />
         </div>
 
         <div class="package-right-img">
-          <img
+          <img 
             class="img-fluid"
             src="../creatives/images/baguio/burnham-lake.jfif"
             alt="Burnham Lake"
@@ -136,6 +161,14 @@
                 </li>
               </ul>
             </div>
+            <!-- <button
+              type="button"
+              class="btn-pay-modal"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Book Now
+            </button> -->
             <button
               type="button"
               class="btn-pay-modal"
@@ -157,7 +190,7 @@
           aria-hidden="true"
         >
           <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content location-modal-booking">
               <div class="modal-header">
                 <h3 class="modal-title fs-5" id="staticBackdropLabel">
                   Confirm Reservation
@@ -170,13 +203,13 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <form action="">
-                  <div class="card-number">
+                <form action="" class="d-flex location-modal-booking-form">
+                  <div class="card-number location-modal-booking-form-item">
                     <label for="cardNumber">Card Number</label>
                     <input type="number" maxlength="16" pattern="{0-9}" placeholder="Card Number"/>
                   </div>
 
-                  <div class="card-exp">
+                  <div class="card-exp location-modal-booking-form-item">
                     <label for="expiration">Exp</label>
                     <input type="number" pattern="{0-9}" maxlength="4" placeholder="MM/YY">
                   </div>
@@ -196,3 +229,9 @@
 
   </body>
 </html>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"
+></script>

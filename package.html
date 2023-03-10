@@ -165,6 +165,52 @@
     <div class="buffer"></div>
     <!--This will serve as buffer for the nav section-->
 
+
+    <div class="booking" id="flight-plus">
+      <div class="booking-info">
+        <form action="">
+          <div>
+            <label for="from">From:</label>
+            <input type="text" placeholder="Pick Up Point" required />
+          </div>
+
+          <div>
+            <label for="destination">To:</label>
+            <select name="destination" id="destination" required>
+              <option value="baguio">Baguio</option>
+              <option value="tagaytay">Tagaytay</option>
+              <option value="boracay">Boracay</option>
+              <option value="china-town">China Town</option>
+              <option value="intramuros">Intramuros</option>
+              <option value="subic">Subic</option>
+            </select>
+          </div>
+          <div>
+            <label for="departure">Departure:</label>
+            <input type="date" required />
+          </div>
+          <div>
+            <label for="arrival">Arrival:</label>
+            <input type="date" required />
+          </div>
+
+          <div>
+            <label for="pax">Pax</label>
+            <input
+              type="number"
+              name=""
+              id=""
+              class="pax-count"
+              required
+            />
+          </div>
+          <button type="submit" class="booking-btn" id="btnBooking">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
     <!-- ==================================================
                       LOCATION AND SEARCH DIV
      ================================================== -->
@@ -182,23 +228,12 @@
                       IFRAME DIV SECTION
      ================================================== -->
 
+     <div class="package-iframe-loader">
      <iframe src="assets/travel-package/baguio.html" id="iframeContentLoader" frameborder="0" name="testFrame"></iframe>
-
-    <div class="iframe-loader" id="contentContainer">
-      <!-- <iframe class="iframe-container" src="../miniProjectV2/assets/travel-package/baguio.html" frameborder="0" scrolling="no"></iframe> -->
-      <!-- <iframe id="abangNaIframe" frameborder="0" onclick="showContent('baguio.html')"></iframe> -->
     </div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
-    <div class="iframe-loader"></div>
+
+    
+  
 
     <!-- ==================================================
                       OTHERS SECTION
