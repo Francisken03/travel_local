@@ -489,10 +489,10 @@ start of modal
 
 /* 
 Passport iFrame Loader */
-/* .div-requirements {
+.div-requirements {
     display: flex;
-    flex-direction: column !important;
-} */
+    /* flex-direction: column !important; */
+}
 
 .pass-visa-result-container  iframe {
     display: flex;
