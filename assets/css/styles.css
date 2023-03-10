@@ -174,8 +174,11 @@ main {
 .section-cards {
     /* box-sizing: border-box; */
     margin: 20px 0px;
-    text-align: center;
 
+}
+
+.cards-header {
+    text-align: center;
 }
 
 .section-cards-inner {
