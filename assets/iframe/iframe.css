@@ -1,0 +1,48 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+body {
+    margin: 30px 40px;
+    padding: 0px 10px;
+    line-height: 30px;
+    font-size: 18px;
+
+}
+
+.div-requirements {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.requirement-container {
+    max-width: 400px;
+    
+}
+
+.new-applicant {
+    display: block;
+}
+
+.ol-id {
+   padding-left: 25px;
+}
+
+
+

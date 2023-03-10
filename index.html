@@ -35,13 +35,13 @@
     <link
       rel="stylesheet"
       href="assets/css/media(max768).css"
-      media="(max-width: 768px)"
+      media="(min-width:481) and (max-width: 768px)"
     />
 
     <link
       rel="stylesheet"
       href="assets/css/media(max1024).css"
-      media="(max-width: 1024px)"
+      media="(min-width: 769) and (max-width: 1024px)"
     />
 
     <title>Mini Project V2</title>
@@ -99,7 +99,9 @@
                   <a class="dropdown-item" href="services.html#top"
                     >Flight+ Plane Tiket with Hotel Booking</a
                   >
-                  <span class="nav-li-span">(Plane Ticket + Hotel Booking)</span>
+                  <span class="nav-li-span"
+                    >(Plane Ticket + Hotel Booking)</span
+                  >
                 </li>
                 <li>
                   <hr />
@@ -114,23 +116,25 @@
                 <li>
                   <hr />
                 </li>
-                
+
                 <li><a class="dropdown-item" href="#">Purchase Sim Card</a></li>
                 <li>
                   <hr />
                 </li>
-                <li><a class="dropdown-item disabled" href="#">Insurance</a>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Insurance</a>
                   <span class="upcoming">Upcoming Feature!</span>
                 </li>
                 <li>
                   <hr />
                 </li>
-                <li><a class="dropdown-item disabled" href="#">Hotel Booking</a>
-                  <span class="upcoming">Upcoming Feature!</span></li>
-                  <!-- <li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Hotel Booking</a>
+                  <span class="upcoming">Upcoming Feature!</span>
+                </li>
+                <!-- <li>
                     <hr />
                   </li> -->
-                
               </ul>
 
               <!-- **************************************************
@@ -182,7 +186,9 @@
 
       <div class="cta-outter">
         <div class="cta-container">
-          <button class="btn-cta-book"><a href="services.html">BOOK NOW</a></button>
+          <button class="btn-cta-book">
+            <a href="services.html">BOOK NOW</a>
+          </button>
         </div>
       </div>
     </header>
@@ -230,30 +236,36 @@
         <div class="section-cards-inner">
           <div class="cards-row d-flex">
             <div class="card-container col-sm-12">
-              <div class="card">
-                <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
-                <img
-                  class="img-fluid card-img"
-                  src="assets/creatives/images/baguio_friends.jpeg"
-                  alt="As a Friend"
-                />
-              </div>
-              <div class="card-text">
-                <h4>Baguio City</h4>
-                <p class="card-text-inner">
-                  Experience the cold breeze of Baguio as a friend.
-                </p>
-              </div>
+                <div class="card">
+                  <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                  <a href="package.html" class="clickable-card" id="btnBaguio" data-content="baguio.html" onclick="showContent('assets/travel-package/baguio.hrml')">
+                    <!-- <button id="btnBaguio" class="clickable-card" onclick="showContent('baguio.html')"> data-content="baguio.html" -->
+                  <img
+                    class="img-fluid card-img"
+                    src="assets/creatives/images/baguio_friends.jpeg"
+                    alt="As a Friend"
+                  /></a>
+                <!-- </button> -->
+                </div>
+                
+                <div class="card-text">
+                  <h4>Baguio City</h4>
+                  <p class="card-text-inner">
+                    Experience the cold breeze of Baguio as a friend.
+                  </p>
+                </div>
+              
             </div>
 
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/tagaytay_taal.jpeg"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Tagaytay City</h4>
@@ -266,11 +278,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/boracay.jpg"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Boracay Island</h4>
@@ -284,11 +297,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/chinatown.webp"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>China Town</h4>
@@ -301,11 +315,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/intramurosjpg.jpg"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Intramuros</h4>
@@ -318,11 +333,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/subic.jpg"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Subic, Zambales</h4>
@@ -333,11 +349,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/aguinaldo_cavite.webp"
                   alt="A Picture of Emilio Aguinaldo's Ancestral House"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Kawit, Cavite</h4>
@@ -350,11 +367,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/baras_rizal.webp"
                   alt="Masungi Georeserve"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Baras, Rizal</h4>
@@ -368,11 +386,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/vigan.jpg"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Calle Crisologo</h4>
@@ -383,11 +402,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/batanes_house.avif"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Batanes</h4>
@@ -400,11 +420,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/bohol_chocolate.avif"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Chocolate Hills</h4>
@@ -417,11 +438,12 @@
             <div class="card-container col-sm-12">
               <div class="card">
                 <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
+                <a href="package.html" class="clickable-card">
                 <img
                   class="img-fluid card-img"
                   src="assets/creatives/images/palawan_coron.avif"
                   alt="As a Friend"
-                />
+                /></a>
               </div>
               <div class="card-text">
                 <h4>Palawan</h4>
@@ -435,12 +457,7 @@
       </div>
     </main>
 
-    
-
-
-    <footer>
-      Mini Project 1 - Francis Ventura&copy; 2023
-    </footer>
+    <footer>Mini Project 1 - Francis Ventura&copy; 2023</footer>
   </body>
 </html>
 <script
@@ -448,4 +465,4 @@
   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
   crossorigin="anonymous"
 ></script>
-<!-- <script src="assets/js/scripts.js"></script> -->
+<script src="assets/js/scripts.js"></script>

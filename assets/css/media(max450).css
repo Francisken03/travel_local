@@ -68,12 +68,13 @@ h1 {
     background-color: #E46F44;
     border-radius: 5px;
     box-shadow: 1px 1px #DCD5DC;
+    padding: 0% !important;
 }
 
 .btn-cta-book a {
     color: white;
     text-shadow: .5px 1px black;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 800;
 }
 
@@ -92,6 +93,13 @@ h1 {
     background-color: #9ec3e7;
     border-radius: 5px;
     box-shadow: 5px 3px 5px #9ec3e8;;
+}
+
+.contact-container-inner  {
+    padding: 40px;
+    background-color: #769ABE;
+    border-radius: 10px;
+    width: 450px;
 }
 
 /* main {
@@ -227,6 +235,21 @@ h4 {
 .booking-info input {
     justify-content: end;
 }
+
+.pass-visa-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sim-img {
+    height: 92px;
+    width: 92px;
+    object-fit: contain;
+    background-color: white;
+} 
+
+
 
 /* =========================================
         footer section

@@ -32,6 +32,17 @@
       href="assets/css/media(max450).css"
       media="(max-width: 480px)"
     />
+    <link
+      rel="stylesheet"
+      href="assets/css/media(max768).css"
+      media="(min-width:481) and (max-width: 768px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/css/media(max1024).css"
+      media="(min-width: 769) and (max-width: 1024px)"
+    />
 
     <title>Mini Project V2</title>
   </head>
@@ -62,7 +73,7 @@
         <div class="collapse navbar-collapse" id="navbar-content">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="../miniProjectV2/index.html">Home</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -80,20 +91,18 @@
                               Start of nav-dropdown
                   ************************************************** -->
               <ul class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                <li><a class="dropdown-item" href="#">Travel Packages</a></li>
+                <!-- <li><a class="dropdown-item" href="services.html">Travel Packages</a></li>
                 <li>
                   <hr />
-                </li>
+                </li> -->
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a class="dropdown-item" href="../miniProjectV2/services.html"
                     >Flight+ Plane Tiket with Hotel Booking</a
                   >
-                  <span class="nav-li-span">Plane Ticket + Hotel Booking</span>
+                  <span class="nav-li-span"
+                    >(Plane Ticket + Hotel Booking)</span
+                  >
                 </li>
-                <li>
-                  <hr />
-                </li>
-                <li><a class="dropdown-item" href="#">Hotel Booking</a></li>
                 <li>
                   <hr />
                 </li>
@@ -107,52 +116,115 @@
                 <li>
                   <hr />
                 </li>
-                <li><a class="dropdown-item" href="#">Insurance</a></li>
+
+                <li><a class="dropdown-item" href="#">Purchase Sim Card</a></li>
                 <li>
                   <hr />
                 </li>
-                <li><a class="dropdown-item" href="#">Purchase Sim Card</a></li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Insurance</a>
+                  <span class="upcoming">Upcoming Feature!</span>
+                </li>
+                <li>
+                  <hr />
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Hotel Booking</a>
+                  <span class="upcoming">Upcoming Feature!</span>
+                </li>
+                <!-- <li>
+                    <hr />
+                  </li> -->
               </ul>
 
               <!-- **************************************************
                               End of nav-dropdown
                   ************************************************** -->
             </li>
+
             <!-- <li class="nav-item">
               <a class="nav-link" href="#">Events</a>
             </li> -->
 
             <li class="nav-item">
-              <a class="nav-link" href="promo.html">Promotions</a>
+              <a class="nav-link" href="../miniProjectV2/index.html#packages">Travel Package</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQs</a>
+              <a class="nav-link" href="../miniProjectV2/faq.html">FAQs</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Contact Us</a>
+              <a class="nav-link" href="../miniProjectV2/faq.html#name">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <div class="buffer"></div>
+    <!--This will serve as buffer for the nav section-->
+
     <!-- ==================================================
-                      PROMOTION SECTION
+                      LOCATION AND SEARCH DIV
      ================================================== -->
-     <section class="section-promotion">
+    <div class="div-search">
+    
+      <div class="searchbox">
+        <form action="">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
 
-        <div class="container-fluid">
-            <h2>Promotions</h2>
-        </div>
+    <!-- ==================================================
+                      IFRAME DIV SECTION
+     ================================================== -->
 
-     </section>
+     <iframe src="assets/travel-package/baguio.html" id="iframeContentLoader" frameborder="0" name="testFrame"></iframe>
 
+    <div class="iframe-loader" id="contentContainer">
+      <!-- <iframe class="iframe-container" src="../miniProjectV2/assets/travel-package/baguio.html" frameborder="0" scrolling="no"></iframe> -->
+      <!-- <iframe id="abangNaIframe" frameborder="0" onclick="showContent('baguio.html')"></iframe> -->
+    </div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
+    <div class="iframe-loader"></div>
 
-    <footer>
-      Mini Project 1 - Francis Ventura&copy; 2023
-    </footer>
+    <!-- ==================================================
+                      OTHERS SECTION
+     ================================================== -->
+
+    <div class="options">
+      <h3>Not your type? Explore other options:</h3>
+
+      <div class="cities">
+        <ul>
+          <li><a href="">Tagaytay</a></li>
+          <li><a href="">Boracay</a></li>
+          <li><a href="">China Town</a></li>
+          <li><a href="">Intramuros</a></li>
+          <li><a href="">Subic Zambales</a></li>
+          <li><a href="">Kawit Cavite</a></li>
+          <li><a href="">Baras, Rizal</a></li>
+          <li><a href="">Calle Crisologo</a></li>
+          <li><a href="">Batanes</a></li>
+          <li><a href="">Chocolate Hills</a></li>
+          <li><a href="">Palawan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>Mini Project 1 - Francis Ventura&copy; 2023</footer>
   </body>
 </html>
 <script

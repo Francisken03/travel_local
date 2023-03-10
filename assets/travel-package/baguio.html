@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/85a08f7df8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="../creatives/Logo/Travel_Local_Favicon_V2.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="../css/media(max450).css"
+      media="(max-width: 480px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/media(max768).css"
+      media="(max-width: 768px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../css/media(max1024).css"
+      media="(max-width: 1024px)"
+    />
+
+    <title>Mini Project V2</title>
+  </head>
+  <body>
+    <section class="package-location-container">
+      <!-- ==================================================
+                      LOCATION HEADER
+     ================================================== -->
+      <div class="div-location">
+        <h2 class="package-h2">Baguio City</h2>
+      </div>
+
+      <!-- ==================================================
+                      PHOTO SECTION
+       ================================================== -->
+
+      <div class="package-img-container">
+        <div class="package-left-img img-fluid">
+          <img
+            src="../creatives/images/baguio/lion-head.jpg"
+            alt="Baguio Lion's Head"
+          />
+        </div>
+
+        <div class="package-right-img">
+          <img
+            class="img-fluid"
+            src="../creatives/images/baguio/burnham-lake.jfif"
+            alt="Burnham Lake"
+          />
+          <img
+            class="img-fluid"
+            src="../creatives/images/baguio/cathedral.jpg"
+            alt="Our Lady of Atonement"
+          />
+          <img
+            class="img-fluid"
+            src="../creatives/images/baguio/bancab.jfif"
+            alt="Bencab Museum"
+          />
+          <img
+            class="img-fluid"
+            src="../creatives/images/baguio/mines-view.jfif"
+            alt="Mines View Park"
+          />
+        </div>
+      </div>
+
+      <div class="package-features">
+        <div class="package-features-inner">
+          <div class="inclusions">
+            <p>Package Includes:</p>
+            <ul>
+              <li>Day tour in and around Baguio City</li>
+              <li>
+                Dedicated tour guide - fluent in both English and Filipino
+              </li>
+              <li>Strawberry Farm</li>
+              <li>Photo op at the Lion's Head</li>
+              <li>Bencab Museum</li>
+              <li>Lunch at the Farmer's Daughter Restaurant</li>
+              <li>Tour at Tam-awan Village</li>
+              <li>Dinner at Baguio Craft Brewery</li>
+              <li>One night stay at the Crown Legacy</li>
+              <li class="package-note">
+                We also offer car rental service from Manila to Baguio and
+                vise-versa
+              </li>
+            </ul>
+          </div>
+
+          <div class="fine-print">
+            <div class="fine-print-inner">
+              <p>Fine Print:</p>
+
+              <ul>
+                <li>
+                  Package Inclusions may change depending on the traffic and
+                  weather condition
+                </li>
+                <li>
+                  Gas fee may change depending on the previous day's gas price
+                </li>
+                <li>
+                  Free cancellation at least 48 hours from scheduled booking
+                </li>
+                <li>Minimum of 5pax for gorup travel</li>
+                <li>
+                  Special pick up locations should be coordinated 1 at least 3
+                  days prior to scheduled booking.
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="btn-pay-modal"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title fs-5" id="staticBackdropLabel">
+                  Confirm Reservation
+                </h3>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="card-number">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="number" maxlength="16" pattern="{0-9}" placeholder="Card Number"/>
+                  </div>
+
+                  <div class="card-exp">
+                    <label for="expiration">Exp</label>
+                    <input type="number" pattern="{0-9}" maxlength="4" placeholder="MM/YY">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                
+                <button type="button" class="btn-pay-modal">
+                  Continue
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

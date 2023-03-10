@@ -28,6 +28,25 @@ Travel & Booking = https://nordicapis.com/6-most-popular-travel-and-booking-apis
     padding: 0%;
 }
 
+body {
+    min-height: 100vh;
+    /* margin: 0; */
+}
+
+.html-page {
+    min-height: 100%;
+    margin-bottom: -25px;
+}
+
+.html-page::after {
+    content: "";
+    display: block;
+}
+
+footer, .html-page::after {
+    height: 25px;
+}
+
 .navbar {
     /* background-color: #769ABE; */
     font-weight: bold;
@@ -183,6 +202,16 @@ main {
     margin: 15px 10px 100px;
 }
 
+
+/*
+ Test css for clickable cards
+ */
+.card-container:hover {
+    box-shadow: 5px 5px black;
+    scale: 1.1 1.1;
+    transition: scale .3s;
+}
+
 .card {
     position: relative;
     min-width: 100%;
@@ -194,10 +223,6 @@ main {
     border: 0px;
 }
 
-/* .card img {
-    
-} */
-
 .heart-icon {
     margin: 5px;
     position: absolute;
@@ -206,12 +231,10 @@ main {
 
 }
 
-.card-img {
+.clickable-card, .card-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* border-radius: 15px; */
-    /* visibility: hidden; */
 }
 
 .card-text p {
@@ -235,6 +258,7 @@ h4 {
     padding: 40px;
     background-color: #769ABE;
     border-radius: 10px;
+    width: 900px;
 }
 
 .contact-link {
@@ -246,11 +270,16 @@ h4 {
 }
 
 footer {
+
+    position: sticky;
+    top: 100%;
     background-color: black;
     color: white;
     text-align: center;
-    /* position: absolute;
-    top: 100%; */
+
+    /* position: sticky;
+    bottom: 0%;
+    width: 100%; */
 
 }
 
@@ -277,6 +306,26 @@ footer {
 
 .faq-btn:focus {
     background-color: #E46F44
+  }
+
+  .map-container {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    padding: 50%;
+
+  }
+
+  .map-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 
   .lg-screen-collapse .card-body{
@@ -315,6 +364,7 @@ footer {
 
 .booking-info input, select, button {
     padding: 10px;
+    margin: 5px;
     border-radius: 10px;
     border: 1px 1px solid black;
     cursor: pointer;
@@ -353,7 +403,29 @@ start of modal
     padding: 20px;
     border: 1px solid black;
     border-radius: 10px;
+    display: block;
     
+}
+
+.booking-modal-content  form {
+    margin-top: 30px;
+}
+
+.booking-modal-content input {
+    width: 250px;
+    /* outline: none; */
+    /* border-bottom: 1px solid black; */
+    background-color: #9ec3e7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cvv-exp-div input {
+    width: 100px;
+}
+
+.card-month input {
+    font-size: 5px !important;
 }
 
  .close-booking-modal {
@@ -368,3 +440,242 @@ start of modal
     text-decoration: none;
     cursor: pointer;
  }
+
+ #booking-modal-submit {
+    /* align-self: center; */
+    width: 100%;
+    margin: 5px auto !important;
+    background-color: #E46F44;
+ }
+
+ .cvv-exp-div {
+
+    margin: 10px 0px;
+ }
+
+.pass-visa-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.passport h3, .visa h3 {
+    text-align: center;
+}
+
+.learn-more {
+    display: block;
+    margin: 5px auto;
+    background-color: #E46F44;
+    
+}
+
+.passport, .visa {
+    margin: 20px 10px;
+    padding: 10px;
+    max-width: 500px;
+    text-align: justify;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.passport:hover, .visa:hover {
+    box-shadow: 1px 1px 5px black;    
+}
+
+/* 
+Passport iFrame Loader */
+/* .div-requirements {
+    display: flex;
+    flex-direction: column !important;
+} */
+
+.pass-visa-result-container  iframe {
+    display: flex;
+    justify-content: center;
+ 
+
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+    /* padding-bottom: 100%; */
+
+}
+.iframe-services{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.collapse-passport {
+    /* display: block; */
+    height: 1000px;
+}
+
+/* .iframe-loader {
+    overflow: hidden;
+} */
+
+.iframe-container{
+    height: 1217px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.sim-text-content {
+    text-align: center;
+}
+
+.sim-text {
+    margin-top: 30px;
+}
+
+.sim {
+    display: flex;
+    justify-content: center;
+}
+
+.sim-img {
+    /* height: 225px;
+    width: 225px; */
+    object-fit: contain;
+    background-color: white;
+}
+
+
+
+/* =================================
+            PACKAGE HTML
+   ================================= */
+
+   .package-location-container {
+    margin: 30px ;
+   }
+   .div-location, .div-search, .package-img-container, .package-right-img, .cities, .package-features, .fine-print, .modal-body form {
+    display: flex;
+   }
+
+   .div-search {
+    justify-content: flex-end;
+   }
+
+   .div-location, .div-search, .options, .iframe-loader, .package-features {
+    margin: 0px 60px;
+   }
+
+   .div-location {
+    justify-content: space-between;
+   }
+
+   .package-h2 {
+    font-size: 50px;
+   }
+
+   .searchbox {
+    border: 5px solid #9ec3e7;
+    border-radius: 5px;
+
+   }
+
+   .searchbox input {
+    padding: 10px;
+
+    height: 50px;
+    width: 100px;
+    transition: width .7s;
+   }
+
+   .searchbox input:focus {
+    width: 300px; /*update with js -- input will not shrink until focus is outside the serchbox div*/
+    transition: width .7s; 
+    outline: none;
+   }
+
+   .searchbox button, .searchbox input {
+    border: none;
+    background-color: transparent;
+   }
+
+   .searchbox button:focus {
+    background-color: rgb(224, 223, 223);
+    outline: none;
+   }
+
+   .package-img-container {
+    margin: 20px 40px;
+   }
+
+   .package-left-img {
+    margin: 10px;
+   }
+
+   .package-right-img {
+    flex-wrap: wrap;
+    object-fit: contain;
+   }
+
+   .package-right-img img {
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+   }
+
+   .cities {
+    width: 100%;
+    display: block;
+   }
+
+   .cities li, .cities li a, .cities ul {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+   }
+
+   .cities ul {
+    width: 100%;
+    justify-content: space-evenly;
+   }
+   .cities li a {
+    padding: 5px;
+   }
+
+   .cities li a:hover {
+    color: #E46F44;
+   }
+
+   .package-features-inner {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+   }
+
+   .inclusions, .payportal, .fine-print {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 5px 10px 10px rgb(109, 105, 105);
+    width: 500px;
+   }
+
+   .fine-print {
+    flex-direction: column;
+
+   }
+
+   .btn-pay-modal {
+    width: 30%;
+    align-self: center;
+    background-color: #E46F44;
+   }
+
+   .modal-body input {
+    border-radius: 5px;
+    pad: 5px;
+   }

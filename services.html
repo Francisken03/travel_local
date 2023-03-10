@@ -32,217 +32,322 @@
       href="assets/css/media(max450).css"
       media="(max-width: 480px)"
     />
-
     <link
       rel="stylesheet"
       href="assets/css/media(max768).css"
-      media="(max-width: 768px)"
+      media="(min-width:481) and (max-width: 768px)"
     />
 
     <link
       rel="stylesheet"
       href="assets/css/media(max1024).css"
-      media="(max-width: 1024px)"
+      media="(min-width: 769) and (max-width: 1024px)"
     />
 
     <title>Mini Project V2</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="assets/creatives/Logo/Travel_Local_Logo_V2.png"
-            alt="Company Logo"
-            width="200"
-            height="50"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-content"
-          aria-controls="navbar-content"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="html-page">
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/creatives/Logo/Travel_Local_Logo_V2.png"
+              alt="Company Logo"
+              width="200"
+              height="50"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbar-content">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbar-dropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Services
-              </a>
-              <!-- **************************************************
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbar-dropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <!-- **************************************************
                               Start of nav-dropdown
                   ************************************************** -->
-              <ul class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                <!-- <li>
+                <ul class="dropdown-menu" aria-labelledby="navbar-dropdown">
+                  <!-- <li>
                   <a class="dropdown-item" href="#package">Travel Packages</a>
                 </li>
                 <li>
                   <hr />
                 </li> -->
-                <li>
-                  <a class="dropdown-item" href="#flight_plus"
-                    >Flight+ Plane Tiket with Hotel Booking</a
-                  >
-                  <span class="nav-li-span"
-                    >(Plane Ticket + Hotel Booking)</span
-                  >
-                </li>
-                <li>
-                  <hr />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#passport"
-                    >Passport Application</a
-                  >
-                </li>
-                <li>
-                  <hr />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#visa">Visa Processing</a>
-                </li>
-                <li>
-                  <hr />
-                </li>
+                  <li>
+                    <a class="dropdown-item" href="#flight_plus"
+                      >Flight+ Plane Tiket with Hotel Booking</a
+                    >
+                    <span class="nav-li-span"
+                      >(Plane Ticket + Hotel Booking)</span
+                    >
+                  </li>
+                  <li>
+                    <hr />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#passport"
+                      >Passport Application</a
+                    >
+                  </li>
+                  <li>
+                    <hr />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#visa">Visa Processing</a>
+                  </li>
+                  <li>
+                    <hr />
+                  </li>
 
-                <li>
-                  <a class="dropdown-item" href="#sim">Purchase Sim Card</a>
-                </li>
-                <li>
-                  <hr />
-                </li>
-                <li>
-                  <a class="dropdown-item disabled" href="#">Insurance</a>
-                  <span class="upcoming">Upcoming Feature!</span>
-                </li>
-                <li>
-                  <hr />
-                </li>
-                <li>
-                  <a class="dropdown-item disabled" href="#">Hotel Booking</a>
-                  <span class="upcoming">Upcoming Feature!</span>
-                </li>
-                <!-- <li>
+                  <li>
+                    <a class="dropdown-item" href="#sim">Purchase Sim Card</a>
+                  </li>
+                  <li>
+                    <hr />
+                  </li>
+                  <li>
+                    <a class="dropdown-item disabled" href="#">Insurance</a>
+                    <span class="upcoming">Upcoming Feature!</span>
+                  </li>
+                  <li>
+                    <hr />
+                  </li>
+                  <li>
+                    <a class="dropdown-item disabled" href="#">Hotel Booking</a>
+                    <span class="upcoming">Upcoming Feature!</span>
+                  </li>
+                  <!-- <li>
                     <hr />
                   </li> -->
-              </ul>
+                </ul>
 
-              <!-- **************************************************
+                <!-- **************************************************
                               End of nav-dropdown
                   ************************************************** -->
-            </li>
+              </li>
 
-            <!-- <li class="nav-item">
+              <!-- <li class="nav-item">
               <a class="nav-link" href="#">Events</a>
             </li> -->
 
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#packages">Travel Package</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#packages"
+                  >Travel Package</a
+                >
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQs</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQs</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html#name">Contact Us</a>
-            </li>
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html#name">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- ==================================================
+      <!-- ==================================================
                        Travel Package
      ================================================== -->
 
-    <div class="buffer"></div>
+      <div class="buffer"></div>
+      <!--This will serve as buffer for the nav section-->
 
-    <main>
-      <section class="featured-services">
-        <div class="booking" id="flight-plus">
-          <div class="booking-info">
-            <form action="">
-              <div>
-                <label for="from">From:</label>
-                <input type="text" placeholder="Pick Up Point" required />
-              </div>
+      <main class="main-service">
+        <section class="featured-services">
+          <div id="bookingModal" class="booking-modal">
+            <div class="booking-modal-content">
+              <span class="close-booking-modal" id="close">&times;</span>
+              <form>
+                <div class="modal-inner-div">
+                  <label for="card-number">Card Number</label>
+                  <input type="number" placeholder="Card Number" required />
+                </div>
 
-              <div>
-                <label for="destination">To:</label>
-                <select name="destination" id="destination" required>
-                  <option value="baguio">Baguio</option>
-                  <option value="tagaytay">Tagaytay</option>
-                  <option value="boracay">Boracay</option>
-                  <option value="china-town">China Town</option>
-                  <option value="intramuros">Intramuros</option>
-                  <option value="subic">Subic</option>
-                </select>
-              </div>
-              <div>
-                <label for="departure">Departure:</label>
-                <input type="date" required />
-              </div>
-              <div>
-                <label for="arrival">Arrival:</label>
-                <input type="date" required />
-              </div>
+                <div class="modal-inner-div cvv-exp-div d-flex">
+                  <div class="cvv-exp-inner">
+                    <label for="number">CVV</label>
+                    <input pattern="{0-9}{4}" placeholder="CVV" required />
+                  </div>
+                  <div class="cvv-exp-inner">
+                    <label for="exp">Exp</label>
+                    <input id="card-month" type="month" />
+                  </div>
+                </div>
+              </form>
 
-              <div>
-                <label for="pax">Pax</label>
-                <input type="number" name="" id="" class="pax-count" required />
-              </div>
-              <button type="submit" class="booking-btn" id="btnBooking">
-                Submit
+              <button type="submit" id="booking-modal-submit">Pay Now</button>
+            </div>
+          </div>
+
+          <div class="booking" id="flight-plus">
+            <div class="booking-info">
+              <form action="">
+                <div>
+                  <label for="from">From:</label>
+                  <input type="text" placeholder="Pick Up Point" required />
+                </div>
+
+                <div>
+                  <label for="destination">To:</label>
+                  <select name="destination" id="destination" required>
+                    <option value="baguio">Baguio</option>
+                    <option value="tagaytay">Tagaytay</option>
+                    <option value="boracay">Boracay</option>
+                    <option value="china-town">China Town</option>
+                    <option value="intramuros">Intramuros</option>
+                    <option value="subic">Subic</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="departure">Departure:</label>
+                  <input type="date" required />
+                </div>
+                <div>
+                  <label for="arrival">Arrival:</label>
+                  <input type="date" required />
+                </div>
+
+                <div>
+                  <label for="pax">Pax</label>
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    class="pax-count"
+                    required
+                  />
+                </div>
+                <button type="submit" class="booking-btn" id="btnBooking">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="pass-visa-container" id="passVisa">
+            <div class="passport">
+              <h3>Passport Application</h3>
+
+              <p>
+                We offer assistance in passport application for both new
+                applicants and passport renewal for a minimal fee of
+                <strong>Php 1,500.00</strong>.
+              </p>
+
+              <button
+                id="learnMorePassport"
+                class="learn-more"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsePassport"
+                aria-expanded="false"
+                aria-controls="collapsePassport"
+              >
+                Learn More
               </button>
-            </form>
+            </div>
+
+            <div class="visa">
+              <h3>Visa Processing</h3>
+
+              <p>
+                We can help you in getting your tourist or student visa. Call
+                now so we'll know how to help you!
+
+                <button id="btnVisa" class="learn-more">Call Now!</button>
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div id="bookingModal" class="booking-modal">
-          <div class="booking-modal-content">
-            <span class="close-booking-modal" id="close">&times;</span>
-            <form>
-              <div>
-                <label for="email">E-mail address:</label>
-                <input type="email" placeholder="E-mail Address" required />
-              </div>
-
-              <div>
-                <label for="number">Mobile Number</label>
-                <input
-                  type="tel"
-                  pattern="{0-9}{11}"
-                  placeholder="Mobille Number"
-                  required
-                />
-              </div>
-            </form>
-
-            <button type="submit" id="booking-modal-submit">Send</button>
+          <div
+            class="pass-visa-result-container collapse collapse-passport"
+            id="collapsePassport"
+          >
+            <iframe
+              class="iframe-services"
+              id="iframePassport"
+              src="assets/iframe/passport.html"
+              frameborder="0"
+              title="passport"
+             
+            ></iframe>
           </div>
-        </div>
-      </section>
-    </main>
+
+          <div class="sim-text">
+            <div class="sim-text-content">
+              <h3>Buy And Claim A Sim</h3>
+              <p>
+                Purchase a sim online so you don't have to get in line. All you
+                need to do is pick up the item in any of our 500 partner stores
+                nationwide.
+              </p>
+            </div>
+          </div>
+          <div class="sim">
+            <a href=""
+              ><img
+                class="img-fluid sim-img"
+                src="assets/creatives/images/smart.png"
+                alt="Smart Telco"
+            /></a>
+            <a href=""
+              ><img
+                class="img-fluid sim-img"
+                src="assets/creatives/images/globe.jfif"
+                alt="Globe Telco"
+            /></a>
+            <a href=""
+              ><img
+                class="img-fluid sim-img"
+                src="assets/creatives/images/gomo.png"
+                alt="Gomo Telco"
+            /></a>
+            <a href=""
+              ><img
+                class="img-fluid sim-img"
+                src="assets/creatives/images/tnt.jfif"
+                alt="TNT Telco"
+            /></a>
+            <a href=""
+              ><img
+                class="img-fluid sim-img"
+                src="assets/creatives/images/tm.jfif"
+                alt="TM Telco"
+            /></a>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer>Mini Project 1 - Francis Ventura&copy; 2023</footer>
   </body>
