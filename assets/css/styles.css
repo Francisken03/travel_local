@@ -275,8 +275,8 @@ h4 {
 
 footer {
 
-    position: sticky;
-    top: 100%;
+    /* position: sticky;
+    top: 100%; */
     background-color: black;
     color: white;
     text-align: center;
@@ -485,6 +485,10 @@ start of modal
 
 .passport:hover, .visa:hover {
     box-shadow: 1px 1px 5px black;    
+}
+
+.cta-passport{
+    display: flex;
 }
 
 /* 
