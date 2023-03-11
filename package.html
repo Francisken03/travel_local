@@ -163,6 +163,30 @@
     </nav>
 
     <div class="buffer"></div>
+    <div id="bookingModal" class="booking-modal">
+      <div class="booking-modal-content">
+        <span class="close-booking-modal" id="close">&times;</span>
+        <form>
+          <div class="modal-inner-div">
+            <label for="card-number">Card Number</label>
+            <input type="number" placeholder="Card Number" required />
+          </div>
+
+          <div class="modal-inner-div cvv-exp-div d-flex">
+            <div class="cvv-exp-inner">
+              <label for="number">CVV</label>
+              <input pattern="{0-9}{4}" placeholder="CVV" required />
+            </div>
+            <div class="cvv-exp-inner">
+              <label for="exp">Exp</label>
+              <input id="card-month" type="month" />
+            </div>
+          </div>
+        </form>
+
+        <button type="submit" id="booking-modal-submit">Pay Now</button>
+      </div>
+    </div>
     <!--This will serve as buffer for the nav section-->
 
 
@@ -267,4 +291,4 @@
   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
   crossorigin="anonymous"
 ></script>
-<!-- <script src="assets/js/scripts.js"></script> -->
+<script src="assets/js/scripts.js"></script>
