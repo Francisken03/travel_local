@@ -171,7 +171,7 @@
             </button> -->
             <button
               type="button"
-              class="btn-pay-modal"
+              class="btn-pay-modal btnBooking"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
@@ -203,7 +203,7 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <form action="" class="d-flex location-modal-booking-form">
+                <!-- <form action="" class="d-flex location-modal-booking-form">
                   <div class="card-number location-modal-booking-form-item">
                     <label for="cardNumber">Card Number</label>
                     <input type="number" maxlength="16" pattern="{0-9}" placeholder="Card Number"/>
@@ -212,6 +212,24 @@
                   <div class="card-exp location-modal-booking-form-item">
                     <label for="expiration">Exp</label>
                     <input type="number" pattern="{0-9}" maxlength="4" placeholder="MM/YY">
+                  </div>
+                </form> -->
+
+                <form>
+                  <div class="modal-inner-div">
+                    <label for="card-number">Card Number</label>
+                    <input type="number" placeholder="Card Number" required />
+                  </div>
+  
+                  <div class="modal-inner-div cvv-exp-div d-flex">
+                    <div class="cvv-exp-inner">
+                      <label for="number">CVV</label>
+                      <input pattern="{0-9}{4}" placeholder="CVV" required />
+                    </div>
+                    <div class="cvv-exp-inner">
+                      <label for="exp">Exp</label>
+                      <input id="card-month" type="month" />
+                    </div>
                   </div>
                 </form>
               </div>
@@ -235,3 +253,5 @@
   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
   crossorigin="anonymous"
 ></script>
+
+<!-- <script src="../js/scripts.js"></script> -->
