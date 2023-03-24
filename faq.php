@@ -51,115 +51,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="assets/creatives/Logo/Travel_Local_Logo_V2.png"
-            alt="Company Logo"
-            width="200"
-            height="50"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-content"
-          aria-controls="navbar-content"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <?php include ("includes/nav.php") ?>
 
-        <div class="collapse navbar-collapse" id="navbar-content">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbar-dropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Services
-              </a>
-              <!-- **************************************************
-                              Start of nav-dropdown
-                  ************************************************** -->
-                  <ul class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                    <!-- <li><a class="dropdown-item" href="services.html">Travel Packages</a></li>
-                    <li>
-                      <hr />
-                    </li> -->
-                    <li>
-                      <a class="dropdown-item" href="services.html#top"
-                        >Flight+</a
-                      >
-                      <span class="nav-li-span">(Plane Ticket + Hotel Booking)</span>
-                    </li>
-                    <li>
-                      <hr />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="services.html#passport">Passport Application</a>
-                    </li>
-                    <li>
-                      <hr />
-                    </li>
-                    <li><a class="dropdown-item" href="services.html#passport">Visa Processing</a></li>
-                    <li>
-                      <hr />
-                    </li>
-                    
-                    <li><a class="dropdown-item" href="services.html#sim">Purchase Sim Card</a></li>
-                    <li>
-                      <hr />
-                    </li>
-                    <li><a class="dropdown-item disabled" href="#">Insurance</a>
-                      <span class="upcoming">Upcoming Feature!</span>
-                    </li>
-                    <li>
-                      <hr />
-                    </li>
-                    <li><a class="dropdown-item disabled" href="#">Hotel Booking</a>
-                      <span class="upcoming">Upcoming Feature!</span></li>
-                      <!-- <li>
-                        <hr />
-                      </li> -->
-                    
-                  </ul>
-
-              <!-- **************************************************
-                              End of nav-dropdown
-                  ************************************************** -->
-            </li>
-
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
-            </li> -->
-
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#packages">Travel Package</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#top">FAQs</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#name">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <!-- ==================================================
                       FAQs SECTION
@@ -426,7 +319,7 @@
                 <li>
                   &#128222;
                   <span id="call"
-                    ><a href="#tel://+63-901-234-5678" class="contact-link"
+                    ><a href="  " class="contact-link"
                       >+63-901-234-5678</a
                     ></span
                   >
