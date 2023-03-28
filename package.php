@@ -143,7 +143,7 @@
      ================================================== -->
 
      <div class="package-iframe-loader">
-     <iframe src="assets/travel-package/baguio.html" id="iframeContentLoader" frameborder="0" name="testFrame"></iframe>
+     <iframe src="assets/travel-package/baguio.php" id="iframeContentLoader" frameborder="0" name="testFrame"></iframe>
     </div>
 
     

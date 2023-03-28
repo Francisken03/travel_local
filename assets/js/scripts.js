@@ -1,3 +1,5 @@
+
+
 var modal = document.getElementById("bookingModal");
 var btnShow = document.getElementById("btnBooking");
 var btnHide = document.getElementById("close");
@@ -15,7 +17,6 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
-
 
 /*
 CODE BLOCK FOR TRAVEL PACKAGE LOADER

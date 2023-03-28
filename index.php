@@ -37,6 +37,8 @@
       href="assets/css/media(max768).css"
       media="(min-width:481) and (max-width: 768px)"
     />
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
     <link
       rel="stylesheet"
@@ -131,7 +133,7 @@
             <div class="card-container col-sm-12">
                 <div class="card">
                   <a href="#"><i class="fa-solid fa-heart heart-icon"></i></a>
-                  <a href="package.html" class="clickable-card" id="btnBaguio" data-content="baguio.html" onclick="showContent('assets/travel-package/baguio.hrml')">
+                  <a href="package.php" class="clickable-card" id="btnBaguio" data-content="baguio.php" onclick="showContent('assets/travel-package/baguio.php')">
                     <!-- <button id="btnBaguio" class="clickable-card" onclick="showContent('baguio.html')"> data-content="baguio.html" -->
                   <img
                     class="img-fluid card-img"

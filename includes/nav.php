@@ -105,7 +105,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="faq.php#name">Contact Us</a>
+              <a class="nav-link" href="registration.php">Register</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="members.php">Members</a>
             </li>
           </ul>
         </div>
